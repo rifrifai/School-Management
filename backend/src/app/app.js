@@ -21,7 +21,7 @@ export const app = express();
 
 app.use(
   cors({
-    origin: [process.env.ORIGIN],
+
     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
     credentials: true,
   })
