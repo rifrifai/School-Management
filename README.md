@@ -9,6 +9,14 @@
 
 Scholarchy website is an innovative online platform designed to enhance the educational experience by simplifying access to educational resources and administrative services. It empowers administrators to efficiently manage school data, including a feature that allows bulk student data entry via Excel. The platform streamlines daily attendance tracking, automatically compiling the data into comprehensive records, which in turn simplifies report card creation. Additionally, it provides students with easy access to their exam scores and the ability to print their report cards. Scholarchy is the perfect solution for managing a school system effectively.
 
+## Account
+
+- siswa
+
+~ nis : 20240031
+
+~ password : 2000-05-31
+
 ## Features
 
 - Admin
@@ -117,7 +125,7 @@ Before you begin, ensure you have the following installed on your machine:
 2. Navigate to  front project directory:
 
      ```bash
-     cd Syncronus
+     cd School-Management
      ```
 
 3.  Navigate to backend directory and install depedencies
