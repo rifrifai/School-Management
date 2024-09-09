@@ -1,8 +1,15 @@
 import student from "../../../assets/svg/Teacher.svg";
 import male from "../../../assets/svg/male.svg";
 import female from "../../../assets/svg/female.svg";
+import { useMemo } from "react";
 
 const HeaderBox = ({ dataDetail, loading }) => {
+
+  const jumlahSiswa = useMemo(()=>{
+     return parseInt(dataDetail.jumlahSiswa)
+  },[dataDetail])
+
+
   return (
     <div className="grid mb-6 sm:grid-cols-3 md:grid-cols-3 gap-4  md:gap-2 lg:gap-8 ">
       <div className=" bg-white flex items-center justify-between p-4 sm:px-3 xl:p-5 h-[85px]  rounded-md shadow-sm ">
@@ -28,7 +35,7 @@ const HeaderBox = ({ dataDetail, loading }) => {
             <div className="border-4 border-neutral rounded-full w-6 h-6 border-t-white animate-spin"></div>
           ) : (
             <h3 className="text-lg font-semibold text-neutral">
-              {Number(dataDetail.jumlahSiswa)}
+              {jumlahSiswa}
             </h3>
           )}
         </div>

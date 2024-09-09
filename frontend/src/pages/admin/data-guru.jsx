@@ -78,9 +78,9 @@ const DataGuruPage = () => {
       } catch (error) {
         responseError(error);
       } finally {
-        setTimeout(() => {
+     
           setLoading(false);
-        }, 50);
+      
       }
     };
     getGuru();

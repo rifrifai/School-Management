@@ -43,9 +43,9 @@ const DataJadwalPage = () => {
       } catch (error) {
         responseError(error);
       } finally {
-        setTimeout(() => {
+    
           setLoading(false);
-        }, 50);
+     
       }
     };
     getJadwal();
