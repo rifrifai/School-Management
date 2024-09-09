@@ -45,53 +45,41 @@ const DataSiswaPage = () => {
   });
 
   useEffect(() => {
-    const getSiswa = async () => {
+    const getData = async () => {
       try {
-        const res = await axios.get(`${HOST}/api/siswa/get-all-siswa`, {
-          params: {
-            page,
-            limit,
-            search,
-            tahunMasuk: filters.tahunMasuk,
-            jenisKelamin: filters.jenisKelamin,
-            kelas: filters.jenisKelamin,
-            kelasNama: filters.kelasNama,
-          },
-          withCredentials: true,
-        });
+        const [siswa, detail] = await Promise.all([
+          axios.get(`${HOST}/api/siswa/get-all-siswa`, {
+            params: {
+              page,
+              limit,
+              search,
+              tahunMasuk: filters.tahunMasuk,
+              jenisKelamin: filters.jenisKelamin,
+              kelas: filters.jenisKelamin,
+              kelasNama: filters.kelasNama,
+            },
+            withCredentials: true,
+          }),
+          axios.get(`${HOST}/api/siswa/get-detail-siswa`, {
+            withCredentials: true,
+          }),
+        ]);
+        if (siswa.status == 200) {
+          setDataSiswa(siswa.data.data);
+          setPagination(siswa.data.pagination);
+        }
 
-        if (res.status == 200) {
-          setDataSiswa(res.data.data);
-          setPagination(res.data.pagination);
+        if (detail.status === 200) {
+          setDataDetail(detail.data.data);
         }
       } catch (error) {
         responseError(error);
       } finally {
-    
-          setLoading(false);
-     
-      }
-    };
-    const getDetail = async () => {
-      try {
-        const res = await axios.get(`${HOST}/api/siswa/get-detail-siswa`, {
-          withCredentials: true,
-        });
-
-        if (res.status === 200) {
-          setDataDetail(res.data.data);
-        }
-      } catch (error) {
-        responseError(error);
-      } finally {
-      
-          setLoading(false);
-      
+        setLoading(false);
       }
     };
 
-    getSiswa();
-    getDetail();
+    getData();
   }, [
     limit,
     page,
