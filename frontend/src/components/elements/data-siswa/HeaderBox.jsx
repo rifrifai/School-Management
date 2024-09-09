@@ -6,7 +6,7 @@ import { useMemo } from "react";
 const HeaderBox = ({ dataDetail, loading }) => {
 
   const jumlahSiswa = useMemo(()=>{
-     return parseInt(dataDetail.jumlahSiswa)
+     return dataDetail.jumlahSiswa
   },[dataDetail])
 
 
