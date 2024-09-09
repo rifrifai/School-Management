@@ -50,7 +50,7 @@ Scholarchy website is an innovative online platform designed to enhance the educ
 | ![Macbook-Air-scholarchy-school vercel app (1)](https://github.com/user-attachments/assets/415b6641-289f-434d-be2f-f680de3df46d) |![Macbook-Air-scholarchy-school vercel app (1)](https://github.com/user-attachments/assets/e702c964-8d1b-4c16-b789-ef1a7cc01181) |
 |![Macbook-Air-scholarchy-school vercel app (2)](https://github.com/user-attachments/assets/80bc9c06-f4b2-440b-ac16-96759838441a)| ![Macbook-Air-scholarchy-school vercel app (3)](https://github.com/user-attachments/assets/b4eee000-c65c-4ad2-9d8d-6723002c2a12)
 |![Macbook-Air-scholarchy-school vercel app (4)](https://github.com/user-attachments/assets/6d8b3cd0-c070-409e-96c0-9fe7fddffcba)|![Macbook-Air-scholarchy-school vercel app (5)](https://github.com/user-attachments/assets/a9269178-8c9c-420c-a1c6-a8ea8ceebea4)
-|![Macbook-Air-scholarchy-school vercel app (6)](https://github.com/user-attachments/assets/6ad2da4e-3a18-43c1-b521-b6d7a0950eb7) |![Macbook-Air-scholarchy-school vercel app (7)](https://github.com/user-attachments/assets/637f3e2d-b193-4668-9fd3-5a9643e7259f)
+|![Macbook-Air-scholarchy-school vercel app (10)](https://github.com/user-attachments/assets/6edda21f-fc48-49e2-a6ea-e48e8366ac19) |![Macbook-Air-scholarchy-school vercel app (7)](https://github.com/user-attachments/assets/637f3e2d-b193-4668-9fd3-5a9643e7259f)
 |![Macbook-Air-scholarchy-school vercel app (8)](https://github.com/user-attachments/assets/0091974e-d3a8-4bcf-ae32-e28c38a24305)|![Screenshot 2024-09-09 225018](https://github.com/user-attachments/assets/016101ca-e9a2-4f3d-8ec4-626f70a1ddf3)
 |![Screenshot 2024-09-09 225045](https://github.com/user-attachments/assets/bc8eb5fd-3e69-4c66-b367-87a4672fd28d)|
 
