@@ -5,7 +5,7 @@
     {
       "src": "/(.*)",
       "dest": "/index.js",
-      "methods": ["GET", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"]
+
     }
   ]
 }
