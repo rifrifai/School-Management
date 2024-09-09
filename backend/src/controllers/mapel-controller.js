@@ -2,7 +2,7 @@ import ResponseError from "../error/response-error.js";
 import Jadwal from "../models/jadwal-model.js";
 import Mapel from "../models/mapel-model.js";
 import Guru from "../models/guru-model.js";
-import Nilai from "../models/Nilai-model.js";
+import Nilai from "../models/nilai-model.js";
 import NilaiPertemuan from "../models/nilaiPertemuan-model.js";
 
 export const addMapel = async (req, res, next) => {
