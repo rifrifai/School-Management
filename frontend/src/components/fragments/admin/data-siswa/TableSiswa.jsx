@@ -127,7 +127,7 @@ const TableSiswa = ({
               </tr>
             </thead>
             <tbody>
-              {data && !loading && data.length === 0 && (
+              {!loading && data.length === 0 && (
                 <tr>
                   <td
                     colSpan="9"
