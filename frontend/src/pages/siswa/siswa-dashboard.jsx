@@ -229,7 +229,19 @@ const SiswaDashboardPage = () => {
                     </div>
                   )}
                   {dataNilai.length > 0 &&
-                    dataNilai.map((average, i) => {
+                    dataNilai
+    .sort((a, b) => {
+    
+      if (a.ajaran > b.ajaran) return -1;
+      if (a.ajaran < b.ajaran) return 1;
+
+     
+      if (a.semester > b.semester) return -1;
+      if (a.semester < b.semester) return 1;
+
+      // If both are the same
+      return 0;
+    }).map((average, i) => {
                       const render =
                         average.totalMapel <= 5 ? (
                           <div
