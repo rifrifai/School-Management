@@ -178,13 +178,13 @@ const TableRapor = ({ dataMapel, dataRapor, average, totalAbsen }) => {
                 scope="row"
                 className="px-4 py-1 w-[25%] text-center font-medium border border-gray-600"
               >
-                {average.tugasAverage}
+             {Math.round(average.tugasAverage*10)/10}
               </td>
               <td
                 scope="row"
                 className="px-4 py-1 w-[25%] text-center font-medium border border-gray-600"
               >
-                {average.ujianAverage}
+                {Math.round(average.ujianAverage*10)/10}
               </td>
             </tr>
             <tr>
