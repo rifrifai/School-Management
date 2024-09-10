@@ -50,13 +50,13 @@ export const loginUser = async (req, res, next) => {
       (await Siswa.findOne({ nis: ni }));
 
     if (!user) {
-      throw new ResponseError(404, "NIS/NIK dan Password salah");
+      throw new ResponseError(404, "NIP/NIS dan Password salah");
     }
 
     const isMatch = await compare(password, user.password);
 
     if (!isMatch) {
-      throw new ResponseError(400, "NIS/NIK dan Password salah");
+      throw new ResponseError(400, "NIP/NIS dan Password salah");
     }
 
     let data;
