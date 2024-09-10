@@ -72,7 +72,7 @@ const SiswaDashboardPage = () => {
       setLoading(false);
     }
 
-    getNilai();
+  
   }, [userData]);
 
   return (
