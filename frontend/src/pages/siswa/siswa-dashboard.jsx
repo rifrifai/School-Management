@@ -23,19 +23,23 @@ const SiswaDashboardPage = () => {
   const [kelas, setKelas] = useState(null);
 
   useEffect(() => {
-    const getJadwal = async () => {
+    const getData = async () => {
       try {
-        const res = await axios.get(
+        const [ResKelas,ResNilai] = await Promise.all([axios.get(
           HOST + "/api/jadwal/get-jadwal-siswa/" + userData.kelas,
           { withCredentials: true }
-        );
-
-        if (res.status === 200) {
-          setDataJadwal(res.data.jadwal);
-          setLibur(res.data.libur);
-          setLiburNasional(res.data.nasional);
-          if (res.data.kelas) {
-            setKelas(res.data.kelas);
+        ),axios.get(HOST + "/api/nilai/get-average", {
+          withCredentials: true,
+        })])
+        if (ResNilai.status === 200) {
+          setDataNilai(ResNilai.data.averages);
+        }
+        if (ResKelas.status === 200) {
+          setDataJadwal(ResKelas.data.jadwal);
+          setLibur(ResKelas.data.libur);
+          setLiburNasional(ResKelas.data.nasional);
+          if (ResKelas.data.kelas) {
+            setKelas(ResKelas.data.kelas);
 
             if (localStorage.getItem("detail")) {
               localStorage.removeItem("detail");
@@ -44,41 +48,26 @@ const SiswaDashboardPage = () => {
               "detail",
               JSON.stringify({
                 userId: userData._id,
-                kelas: res.data.kelas.kelas,
-                namaKelas: res.data.kelas.nama,
-                ajaran: res.data.ajaran,
+                kelas: ResKelas.data.kelas.kelas,
+                namaKelas: ResKelas.data.kelas.nama,
+                ajaran: ResKelas.data.ajaran,
               })
             );
           }
         }
-      } catch (error) {
-        responseError(error);
-      } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 50);
-      }
-    };
-    const getNilai = async () => {
-      try {
-        const res = await axios.get(HOST + "/api/nilai/get-average", {
-          withCredentials: true,
-        });
 
-        if (res.status === 200) {
-          setDataNilai(res.data.averages);
-        }
+
+
       } catch (error) {
         responseError(error);
       } finally {
-        setTimeout(() => {
           setLoading(false);
-        }, 50);
       }
     };
+   
 
     if (userData.kelas) {
-      getJadwal();
+      getData();
     } else {
       setLoading(false);
     }
