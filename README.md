@@ -3,7 +3,7 @@
   <p>School Management System!</p>
 </div>
 
-![School Management System](https://github.com/user-attachments/assets/0cdf67f4-eca2-4c0a-9b19-6f47a169bc6c)
+![School Management System (1)](https://github.com/user-attachments/assets/d955ad55-bdfa-435d-b73e-90549ab0a4de)
 
 ## About
 
