@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import { ChevronsLeft, X } from "lucide-react";
-import logo from "../../assets/Schoolarcy (1).webp";
+import logo from "../../assets/Nuris.png";
 import ListSidebarAdmin from "../fragments/admin/ListSidebarAdmin";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -35,14 +36,15 @@ const AsideLayout = ({ setIsSidebar }) => {
       </button>
       <div className="flex justify-center align-center">
         <small className="text-[0.625rem] text-white text-center">
-          Copyright <span className="text-[#fdc148]">&copy;</span> 2024.
-          <br /> Created By{" "}
+          Copyright by <span className="text-[#fdc148]">&copy;</span>{" "}
+          {new Date().getFullYear()}
+          <br /> Nurul Islam{" "}
           <Link
             target="_blank"
             className=" underline text-[#fdc148]"
-            to={"https://github.com/anwarhakim31"}
+            to={"https://github.com/rifrifai"}
           >
-            Anwar Hakim
+            Developer
           </Link>
         </small>
       </div>

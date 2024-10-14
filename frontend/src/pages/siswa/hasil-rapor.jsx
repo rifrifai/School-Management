@@ -2,7 +2,7 @@ import DropdownSiswa from "@/components/elements/DropdownSiswa";
 import { selectedUserData } from "@/store/slices/auth-slice";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useSelector } from "react-redux";
-import logo from "../../assets/Schoolarcy (2).webp";
+import logo from "../../assets/Nuris.png";
 import axios from "axios";
 import { HOST } from "@/util/constant";
 import responseError from "@/util/services";
@@ -186,7 +186,7 @@ const HasilRaporPage = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-[150px] h-[30px] md:w-[180px] md:h-[35px]"
+                className="w-[150px] h-[55px] md:w-[180px] md:h-[60px]"
               />
             </div>
             <div className="border-t border-gray-700 mt-2 "></div>
@@ -363,7 +363,7 @@ const HasilRaporPage = () => {
                       scope="row"
                       className="px-4 py-1 w-[25%] text-center font-medium border border-gray-600"
                     >
-                        {Math.round(average.tugasAverage * 10) / 10}
+                      {Math.round(average.tugasAverage * 10) / 10}
                     </td>
                     <td
                       scope="row"

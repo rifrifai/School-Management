@@ -1,9 +1,8 @@
 import dotenv from "dotenv";
-dotenv.config();
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import errorMiddleware from "../middlewares/error-middleware.js";
+import { errorMiddleware, notFound } from "../middlewares/error-middleware.js";
 import authRouter from "../routes/auth-router.js";
 import siswaRouter from "../routes/siswa-router.js";
 import kelasRouter from "../routes/kelas-router.js";
@@ -18,6 +17,7 @@ import nilaiRouter from "../routes/nilai-router.js";
 import nilaiPertemuanRouter from "../routes/nilaiPertemuan-router.js";
 
 export const app = express();
+dotenv.config();
 
 app.use(
   cors({
@@ -29,6 +29,7 @@ app.use(
 
 app.use(cookieParser());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/auth", authRouter);
 app.use("/api/siswa", siswaRouter);
@@ -44,3 +45,4 @@ app.use("/api/nilai", nilaiRouter);
 app.use("/api/nilaiPertemuan", nilaiPertemuanRouter);
 
 app.use(errorMiddleware);
+// app.use(notFound);

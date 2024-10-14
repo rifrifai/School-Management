@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
-import logo from "../assets/Schoolarcy (2).webp";
+import logo from "../assets/Nuris.png";
 import { Badge, BadgeCheck, Eye, EyeOff, KeyRound, User } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import Slider from "@/components/fragments/Login/Slider";
@@ -94,7 +95,7 @@ const LoginPage = () => {
           <Slider />
         </div>
         <div className="bg-background py-24 sm:py-0 w-full h-screen sm:order-2 flex justify-center flex-col px-14 sm:px-8 md:px-14 lg:px-28 xl:px-32 bg items-center">
-          <figure className="w-[200px] h-[35px]">
+          <figure className="w-[200px] h-[65px]">
             <img src={logo} alt="logo" className="mx-auto w-full h-full" />
           </figure>
           {/* <div className="h-2 w-full mt-14  mb-4 relative">
@@ -155,7 +156,7 @@ const LoginPage = () => {
           </label>
           <div className="w-full relative mb-5">
             <input
-              type={isText ? "password" : "text"}
+              type={isText ? "text" : "password"}
               id="password"
               value={formData.password}
               name="password"

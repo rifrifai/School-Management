@@ -123,7 +123,7 @@ const bulkAddSiswa = async () => {
 const connectDB = async () => {
   try {
     await mongoose.connect(databaseURL);
-    console.log("Connected to DB");
+    console.log("Connected to MongoDB");
 
     // Perform bulk insertion after DB connection is established
     // await bulkAddSiswa();

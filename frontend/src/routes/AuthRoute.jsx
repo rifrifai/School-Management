@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { selectedUserData } from "@/store/slices/auth-slice";
 import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";

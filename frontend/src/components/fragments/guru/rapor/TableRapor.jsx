@@ -1,4 +1,4 @@
-import logo from "../../../../assets/Schoolarcy (2).webp";
+import logo from "../../../../assets/Nuris.png";
 
 const TableRapor = ({ dataMapel, dataRapor, average, totalAbsen }) => {
   return (
@@ -7,7 +7,7 @@ const TableRapor = ({ dataMapel, dataRapor, average, totalAbsen }) => {
         <img
           src={logo}
           alt="Logo"
-          className="w-[150px] h-[30px] md:w-[180px] md:h-[35px]"
+          className="w-[150px] h-[55px] md:w-[180px] md:h-[60px]"
         />
       </div>
       <div className="border-t border-gray-700 mt-2 "></div>
@@ -178,13 +178,13 @@ const TableRapor = ({ dataMapel, dataRapor, average, totalAbsen }) => {
                 scope="row"
                 className="px-4 py-1 w-[25%] text-center font-medium border border-gray-600"
               >
-             {Math.round(average.tugasAverage*10)/10}
+                {Math.round(average.tugasAverage * 10) / 10}
               </td>
               <td
                 scope="row"
                 className="px-4 py-1 w-[25%] text-center font-medium border border-gray-600"
               >
-                {Math.round(average.ujianAverage*10)/10}
+                {Math.round(average.ujianAverage * 10) / 10}
               </td>
             </tr>
             <tr>

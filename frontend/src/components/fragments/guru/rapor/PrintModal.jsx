@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../assets/Schoolarcy (2).webp";
+import logo from "../../../../assets/Nuris.png";
 
 const PrintComponent = React.forwardRef(
   ({ dataRapor, average, totalAbsen, dataMapel }, ref) => {

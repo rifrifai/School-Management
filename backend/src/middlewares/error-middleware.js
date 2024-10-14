@@ -1,6 +1,12 @@
 import ResponseError from "../error/response-error.js";
 
-const errorMiddleware = (err, req, res, next) => {
+export const notFound = (req, res, next) => {
+  const error = new Error(`Not Found - ${req.originalUrl}`);
+  res.status(404);
+  next(error);
+};
+
+export const errorMiddleware = (err, req, res, next) => {
   if (!err) {
     next();
     return;
@@ -18,5 +24,3 @@ const errorMiddleware = (err, req, res, next) => {
       .end();
   }
 };
-
-export default errorMiddleware;
