@@ -1,5 +1,6 @@
 import bcrypt, { hash, genSalt } from "bcrypt";
 import mongoose from "mongoose";
+import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
@@ -12,6 +13,15 @@ dotenv.config();
 
 const port = process.env.PORT || 2001;
 const databaseURL = process.env.DATABASE_URL;
+
+// Menggunakan CORS untuk mengizinkan akses dari domain tertentu (front-end)
+app.use(
+  cors({
+    origin: "https://school-management-eight-iota.vercel.app", // Domain front-end yang diizinkan
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Metode HTTP yang diizinkan
+    credentials: true, // Izinkan pengiriman cookie
+  })
+);
 
 // Function to hash passwords
 async function hashPassword(users) {
