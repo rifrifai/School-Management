@@ -21,7 +21,10 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: [process.env.ORIGIN],
+    origin: [
+      "http://localhost:2000",
+      "https://school-management-eight-iota.vercel.app",
+    ],
     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
     credentials: true,
   })
