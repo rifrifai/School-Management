@@ -28,13 +28,16 @@ dotenv.config();
 // );
 
 // Menggunakan CORS untuk mengizinkan akses dari domain tertentu (front-end)
-// app.use(
-// cors({
-//   origin: "https://school-management-eight-iota.vercel.app", // Domain front-end yang diizinkan
-//   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Metode HTTP yang diizinkan
-//   credentials: true, // Izinkan pengiriman cookie
-// })
-//);
+app.use(
+  cors({
+    // Domain front-end yang diizinkan
+    origin: "https://school-management-eight-iota.vercel.app",
+    // Metode HTTP yang diizinkan
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    // Izinkan pengiriman cookie
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 app.use(express.json());
