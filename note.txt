@@ -1,0 +1,17 @@
+vercel fe
+{
+      "source": "/api/:path(.*)",
+      "destination": "https://manajemen-sekolah-be.vercel.app/api/:path"
+    },
+
+
+vite config
+server: {
+    proxy: {
+      "/api": {
+        target: "https://manajemen-sekolah-be.vercel.app",
+        changeOrigin: true,
+      },
+    },
+  },
+// ditulis setelah plugins
