@@ -19,13 +19,13 @@ import nilaiPertemuanRouter from "../routes/nilaiPertemuan-router.js";
 export const app = express();
 dotenv.config();
 
-app.use(
-  cors({
-    origin: [process.env.ORIGIN],
-    methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [process.env.ORIGIN],
+//     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
+//     credentials: true,
+//   })
+// );
 
 app.use(cookieParser());
 app.use(express.json());

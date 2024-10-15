@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://manajemen-sekolah-be.vercel.app/api",
+        target: "https://manajemen-sekolah-be.vercel.app",
         changeOrigin: true,
       },
     },
