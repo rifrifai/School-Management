@@ -21,12 +21,9 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:2000",
-      "https://school-management-eight-iota.vercel.app",
-    ],
+    origin: [process.env.ORIGIN],
     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
-    credentials: true,
+    credentials: true, // kirim http only cookie
   })
 );
 
