@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get(HOST + "/api/auth/get-auth", {
+        const res = await axios.get(HOST + "/auth/get-auth", {
           withCredentials: true,
         });
 
