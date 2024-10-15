@@ -19,25 +19,25 @@ import nilaiPertemuanRouter from "../routes/nilaiPertemuan-router.js";
 export const app = express();
 dotenv.config();
 
-// app.use(
-//   cors({
-//     origin: [process.env.ORIGIN],
-//     methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
-//     credentials: true,
-//   })
-// );
-
-// Menggunakan CORS untuk mengizinkan akses dari domain tertentu (front-end)
 app.use(
   cors({
-    // Domain front-end yang diizinkan
-    origin: "https://school-management-eight-iota.vercel.app",
-    // Metode HTTP yang diizinkan
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    // Izinkan pengiriman cookie
+    origin: [process.env.ORIGIN],
+    methods: ["GET", "PUT", "PATCH", "POST", "DELETE"],
     credentials: true,
   })
 );
+
+// Menggunakan CORS untuk mengizinkan akses dari domain tertentu (front-end)
+// app.use(
+//   cors({
+//     // Domain front-end yang diizinkan
+//     origin: "https://school-management-eight-iota.vercel.app",
+//     // Metode HTTP yang diizinkan
+//     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+//     // Izinkan pengiriman cookie
+//     credentials: true,
+//   })
+// );
 
 app.use(cookieParser());
 app.use(express.json());
