@@ -16,7 +16,7 @@ import jadwalRouter from "../routes/jadwal-router.js";
 import nilaiRouter from "../routes/nilai-router.js";
 import nilaiPertemuanRouter from "../routes/nilaiPertemuan-router.js";
 
-export const app = express();
+const app = express();
 dotenv.config();
 
 app.use(
@@ -58,3 +58,5 @@ app.use("/api/nilaiPertemuan", nilaiPertemuanRouter);
 
 app.use(errorMiddleware);
 // app.use(notFound);
+
+export default app;

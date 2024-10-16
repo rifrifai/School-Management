@@ -43,11 +43,14 @@ export const createAdmin = async (req, res, next) => {
 export const loginUser = async (req, res, next) => {
   try {
     const { ni, password } = req.body;
-    return res.status(200).json({ ni, password });
+    // return res.status(200).json({ ni, password });
 
     let user =
+      // 1 query
       (await Admin.findOne({ username: ni })) ||
+      // 1 query
       (await Guru.findOne({ nip: ni })) ||
+      // 1 query
       (await Siswa.findOne({ nis: ni }));
 
     if (!user) {
@@ -62,6 +65,7 @@ export const loginUser = async (req, res, next) => {
 
     let data;
 
+    // at least 1 query
     if (user.role === "admin") {
       data = await Admin.findOne({ username: ni }).select("-password");
     } else if (user.role === "guru") {

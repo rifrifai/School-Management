@@ -4,7 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
-import { app } from "./src/app/app.js";
+import app from "./src/app/app.js";
+
 import Siswa from "./src/models/siswa-model.js";
 import Kelas from "./src/models/kelas-model.js";
 import Total from "./src/models/total-model.js";

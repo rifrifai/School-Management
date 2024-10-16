@@ -42,7 +42,12 @@ const SideProfile = forwardRef(({ handleClose }, ref) => {
   const hangleChangeImage = async (e) => {
     const file = e.target.files[0];
 
-    if (!file.type.includes(ALLOWED_FILE_TYPES)) {
+    // ALLOWED_FILE_TYPES => array
+    // [].includes('string') => benar
+    // 'string'.includes([]) => salah
+    // // 'string'.includes('string') => benar
+
+    if (!ALLOWED_FILE_TYPES.includes(file.type)) {
       return toast.error("Format file tidak di dukung");
     } else if (file.size > MAX_FILE_SIZE) {
       return toast.error("Ukuran File Maksimal 1 MB.");
