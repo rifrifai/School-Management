@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../assets/Nuris.png";
+import logo from "../../../../assets/SMPITNuris.png";
 
 const PrintComponent = React.forwardRef(
   ({ dataRapor, average, totalAbsen, dataMapel }, ref) => {
@@ -13,7 +13,7 @@ const PrintComponent = React.forwardRef(
             <img
               src={logo}
               alt="Logo"
-              className="w-[150px] h-[30px] md:w-[180px] md:h-[35px]"
+              className="w-[55px] h-[150px] md:w-[180px] md:h-[35px]"
             />
           </div>
           <div className="border-t border-gray-700 mt-2 "></div>

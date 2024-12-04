@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../assets/Schoolarcy (2).webp";
+import logo from "../../../../assets/SMPITNuris.png";
 import { formatDate } from "@/util/formatDate";
 
 const PrintComponent = React.forwardRef(({ data, dataSiswa }, ref) => {

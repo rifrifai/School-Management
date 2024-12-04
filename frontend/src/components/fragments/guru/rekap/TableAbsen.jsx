@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../../assets/Schoolarcy (2).webp";
+import logo from "../../../../assets/SMPITNuris.png";
 
 const formatTable = (status) => {
   switch (status) {

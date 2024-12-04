@@ -1,5 +1,5 @@
 import React, { Fragment, useMemo } from "react";
-import logo from "../../assets/Schoolarcy (2).webp";
+import logo from "../../assets/SMPITNuris.png";
 
 const PrintComponentNilai = React.forwardRef(
   ({ dataMapel, kelas, tahunAjaran, semester, data }, ref) => {

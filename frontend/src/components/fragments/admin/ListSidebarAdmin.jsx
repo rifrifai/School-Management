@@ -230,7 +230,7 @@ const ListSidebarAdmin = () => {
                   className="flex items-center gap-2 px-2 group hover:bg-white h-8 my-2 mx-3 w-36 rounded-md"
                 >
                   {drop.icon}
-                  <span className="text-white    text-sm font-light group-hover:text-neutral group-hover:font-medium ">
+                  <span className="text-white text-sm font-light group-hover:text-neutral group-hover:font-medium ">
                     {drop.nama}
                   </span>
                 </button>

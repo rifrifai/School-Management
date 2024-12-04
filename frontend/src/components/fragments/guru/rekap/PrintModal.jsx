@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../assets/Schoolarcy (2).webp";
+import logo from "../../../../assets/SMPITNuris.png";
 
 const PrintComponent = React.forwardRef(
   ({ rekapAbsen, countDay, kelas, month, year }, ref) => {

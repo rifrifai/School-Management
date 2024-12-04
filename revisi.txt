@@ -1,0 +1,26 @@
+- nama maple jangan kode
+- password
+- guru maple / wali kelas dont input 
+- desain raport
+- tanda tangan raport
+
+admin123 = 111213
+
+wali kelas = 
+1980187890 (111213) 7A, Nur Rachman Shiroh
+1952845687 (iriyanti123) 7B
+1909874673 (uswati) 7C
+
+guru =
+ipa (1909874673 (uswati))
+mtk (16558582546 (111213))
+bhs (11235548582 (111213))
+shiroh (1980187890 (sunarto123))
+quran hadist (1655685875 (111213))
+informatika (4545454542 (111213)) 7a 7c
+bhs arab (12238596012 (111213)) 7a 7b
+
+
+
+siswa =
+7A (2716)
