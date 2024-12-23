@@ -4,11 +4,11 @@
 - desain raport
 - tanda tangan raport
 
-admin123 = 111213
+admin123 = 11121314
 
 wali kelas = 
 1980187890 (111213) 7A, Nur Rachman Shiroh
-1952845687 (iriyanti123) 7B
+1952845687 (111213) 7B
 1909874673 (uswati) 7C
 
 guru =
@@ -23,4 +23,6 @@ bhs arab (12238596012 (111213)) 7a 7b
 
 
 siswa =
-7A (2716)
+7A (2716) 111213
+
+source ~/.bash_profile
