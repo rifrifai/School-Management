@@ -202,6 +202,9 @@ const LoginPage = () => {
               Remember me
             </label>
           </div>
+          <h1 className="text-center text-xs font-medium text-gray-500">
+            Jika lupa password hubungi TU
+          </h1>
           <button
             type="submit"
             aria-label="submit"

@@ -113,12 +113,12 @@ const TableGuru = ({
                 <th scope="col" className="py-4 text-center">
                   Kontak
                 </th>
-                <th
+                {/* <th
                   scope="Kelas"
                   className="text-center px-4 py-4 whitespace-nowrap"
                 >
                   Status
-                </th>
+                </th> */}
                 <th
                   scope="Kelas"
                   className="text-center px-4 py-4 whitespace-nowrap"
@@ -131,7 +131,7 @@ const TableGuru = ({
               </tr>
             </thead>
             <tbody>
-              { !loading && data.length === 0 && (
+              {!loading && data.length === 0 && (
                 <tr>
                   <td
                     colSpan="9"
@@ -212,7 +212,7 @@ const TableGuru = ({
                         </div>
                       </div>
                     </td>
-                    <td
+                    {/* <td
                       scope="row"
                       className={`   py-4 px-8 max-w-full text-center text-xs font-normal whitespace-nowrap text-gray-900 `}
                     >
@@ -224,7 +224,7 @@ const TableGuru = ({
                         {" "}
                         {guru.status ? "Aktif" : "Non Aktif"}
                       </span>
-                    </td>
+                    </td> */}
                     <td
                       scope="row"
                       className=" py-4 px-8 max-w-full text-center text-xs font-normal whitespace-nowrap text-gray-900 "
