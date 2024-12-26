@@ -9,6 +9,7 @@ import { space } from "postcss/lib/list";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Checkbox } from "@/components/ui/checkbox";
+import jadwal from "../../../../assets/jadwal.png";
 
 const waktuPelajaran = [
   { no: 1, jamKe: 1, waktu: "07.30 – 08.15" },
@@ -261,7 +262,7 @@ const TableJadwal = ({
           dataSlice={dataSlice}
         />
       </div>
-      <table className=" w-[40%] text-gray-500 table-a my-4 mx-auto">
+      {/* <table className=" w-[40%] text-gray-500 table-a my-4 mx-auto">
         <thead className="text-xs uppercase text-white bg-neutral">
           <tr>
             <th className="px-3 py-4 flex items-center justify-center">No.</th>
@@ -271,12 +272,22 @@ const TableJadwal = ({
         </thead>
         <tbody>
           <tr>
-            <td>1.</td>
-            <td>1</td>
-            <td>07.30 – 08.15</td>
+            <td className="px-10   border-gray-300  py-4 text-md text-gray-900 h-2">
+              1.
+            </td>
+            <td className="px-10   border-gray-300  py-4 text-md text-gray-900 h-2">
+              1
+            </td>
+            <td className="px-10   border-gray-300  py-4 text-md text-gray-900 h-2">
+              07.30 – 08.15
+            </td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
+      {/* <img src={jadwal} alt="Jadwal" /> */}
+      <div className="w-full flex-center">
+        <img src={jadwal} alt="waktu pelajaran" className="h-[320px] p-4" />
+      </div>
     </>
   );
 };
